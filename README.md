@@ -5,7 +5,7 @@ The goal of this project is to create a map-based application which summarizes r
 The data were obtained from [Veraset](https://www.veraset.com/). They contain ping-level cell phone location data from a 5% sample of cell phones in America from the last four weeks (updated weekly).
 
 We define crowdedness as follows:
-1. For every minute of data, we compute how many cell phones in our sample are present in each establishment.
+1. For every minute of data beginning at 8:00 a.m. and ending at 10 p.m. each day, we compute how many cell phones in our sample are present in each establishment.
 1. We multiply this number by 20 (since we have a 5% sample). This gives us an estimated number of individuals present at the establishment -- call this number *N*.
 1. We multiply *N* by *N - 1* to get the number of potential contacts for each minute in each establishment.
 1. We divide the number of potential contacts by the square footage of the establishment to get the number of potential contacts per square foot.
