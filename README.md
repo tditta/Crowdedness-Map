@@ -26,3 +26,5 @@ The input data for the application are contained in csv with the following varia
 * comp_to_grocery: How crowded the establishment is relative to the mean crowdedness of grocery stores in the establishment's commuting zone (0 = <1/2 the mean, 1 = >=1/2 the mean <=2 times the mean, 2 = >2 times the mean)
 * hofd<#>, with # = 1-6: the most crowded hours of the day for the establishment (8 = 8 a.m. to 9 a.m., 9 = 9 a.m. to 10 a.m., etc.); hofd1 is the most crowded hour, hofd2 is the second-most crowded hour, and so on
 * dofw<#>, with # = 1-3: the most crowded days of the week for the establishment (0 = Sunday, 1 = Monday, etc.); dofw1 is the most crowded day, dofw2 is the second-most crowded day, and so on
+
+In order to be considered a most crowded hour of day or day of week, the hour/day must be at least 1.5 times as crowded as the mean hour/day for the establishment and at least 0.9 times as crowded as the most crowded hour/day of the establishment. So, some establishments have more croweded hours/days than others. No most crowded hour/day is reported for establishments that receive fewer than 20 visits in the four weeks of the sample.
