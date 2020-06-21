@@ -11,7 +11,7 @@ We define crowdedness as follows:
 1. We divide the number of potential contacts by the square footage of the establishment to get the number of potential contacts per square foot.
 1. We sum this number by hour of day, day of week, and over the whole four-week sample to get the crowdedness of each establishment in those time intervals.
 1. We divide these numbers by the total estimated number of visitors to the establishment in the given hour of day, day of week, and over the whole four-week sample to get the average crowdedness per visitor in those time intervals.
-1. All rankings and comparisons in the application are based on these average crowdedness per visitor values.
+1. All rankings and comparisons in the application are based on these average crowdedness per visitor values, and all rankings are within a [commuting zone](https://en.wikipedia.org/wiki/Commuting_zone).
 
 ## Data
 
