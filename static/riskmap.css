@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: 18px Roboto, Arial, sans-serif;
+  color: gray;
+}
+@media screen and (orientation: portrait) {
+  #flexContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  #mapContainer {
+    height: 100%;
+  }
+  #placesContainer {
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+  }
+}
+@media screen and (orientation: landscape) {
+  #flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  #mapContainer {
+    width: 100%;
+  }
+  #placesContainer {
+    height: 100%;
+    width: 300px;
+    overflow: scroll;
+  }
+}
+#map {
+  height: 100%;
+}
+#search {
+  width: 60%;
+  height: 34px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#places, #placesPlaceholder {
+  margin: 10px;
+}
+.placeIcon img {
+  width: 20px;
+}
