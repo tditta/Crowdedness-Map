@@ -19,7 +19,7 @@ The input data for the application are contained in csv with the following varia
 * location_name: The name of the establishment (e.g. McDonald's, Target)
 * latitude, longitude: The latitude and longitude of the establishment
 * grocery, restaurant: Indicator for whether or not the establishment is a grocery store (NAICS code 4451) or restaurant (NAICS code 7225)
-* unreliable: Indicator for unreliable data (NAICS codes 23 or 42, no reliable square footage value, and/or >15% of dwell time >=12 hours)
+* unreliable: Indicator for unreliable data (NAICS codes 23 or 42, no reliable square footage value, or >15% of visits have dwell time >=12 hours)
 * crowded_place: In which third of the crowdedness distribution within the establishment's commuting zone the establishment falls (0 = bottom third, 1 = middle third, 2 = top third)
 * crowded_grocery: Only defined for grocery stores -- in which third of the crowdedness distribution for grocery stores within the establishment's commuting zone the establishment falls in
 * crowded_restaurant: Only defined for restaurants -- in which third of the crowdedness distribution for restaurants within the establishment's commuting zone the establishment falls in
